@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 setTimeout(() => {
                                    errorDiv.remove();
-                    window.location.href = "https://creatorapp.zohopublic.in/maamangalaenterprises/spm/form-perma/Daily_Fish_Market_Price_Entry/URjMZ3T4GXPqGqzveyQ0g4SJ9jpfy6umg7KrYeZ0DHJ0wG8uCK0ATHTYYVb50TheWAVZ6jFaC8TfVrMzzHzzaunEsHbtduDOj9vb";
+                    window.location.href = "https://creatorapp.zohopublic.in/maamangalaenterprises/spm/form-perma/Daily_Fish_Market_Price_Entry/sBY2pU8zj4UMO6t5nhde53ghXYQYAQFHWhWt3ptbVRF3YTuKE3sQNN3NyaDraUn2fGQbpP519ZQd4yGqUwTayTOK7kMVSxRWKdfP";
                 }, 1000);
 
             } else {

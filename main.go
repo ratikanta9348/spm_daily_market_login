@@ -81,6 +81,7 @@ func main() {
 
 	// Routes
 	http.HandleFunc("/login", loginPage)
+	http.HandleFunc("/", loginPage)
 	http.HandleFunc("/authenticate", authenticate)
 	http.HandleFunc("/health", health)
 

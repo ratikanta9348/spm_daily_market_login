@@ -1,0 +1,333 @@
+/* ==========================
+   GLOBAL RESET
+========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
+    --white: #ffffff;
+    --text-light: #dbeafe;
+    --error: #ffb4b4;
+}
+
+/* ==========================
+   BODY
+========================== */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #0f172a 0%,
+        #1e3a8a 50%,
+        #2563eb 100%
+    );
+}
+
+/* ==========================
+   LOGIN CARD
+========================== */
+.login-container {
+
+    width: 100%;
+    max-width: 420px;
+
+    padding: 40px 30px;
+
+    border-radius: 24px;
+
+    background: rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.25);
+
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* ==========================
+   LOGO SECTION
+========================== */
+.logo-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-section img {
+
+    width: 100px;
+    height: 100px;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+    background: #ffffff;
+
+    padding: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,0.15);
+}
+
+.logo-section h1 {
+
+    color: var(--white);
+
+    margin-top: 15px;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+}
+
+.logo-section p {
+
+    margin-top: 8px;
+
+    color: var(--text-light);
+
+    font-size: 14px;
+}
+
+/* ==========================
+   INPUT GROUP
+========================== */
+.input-group {
+
+    position: relative;
+
+    margin-bottom: 18px;
+}
+
+.input-group i {
+
+    position: absolute;
+
+    left: 15px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #94a3b8;
+
+    font-size: 15px;
+}
+
+.input-group input {
+
+    width: 100%;
+
+    padding: 14px 15px 14px 45px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.15);
+
+    color: white;
+
+    font-size: 15px;
+
+    transition: all 0.3s ease;
+}
+
+.input-group input::placeholder {
+    color: #cbd5e1;
+}
+
+.input-group input:focus {
+
+    background: rgba(255,255,255,0.20);
+
+    box-shadow:
+        0 0 0 2px rgba(96,165,250,0.5);
+}
+
+/* ==========================
+   BUTTON
+========================== */
+.login-btn {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: var(--primary);
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.login-btn i {
+    margin-right: 8px;
+}
+
+.login-btn:hover {
+
+    background: var(--primary-hover);
+
+    transform: translateY(-2px);
+}
+
+.login-btn:active {
+    transform: translateY(0);
+}
+
+/* ==========================
+   ERROR MESSAGE
+========================== */
+#error {
+
+    min-height: 24px;
+
+    margin-top: 15px;
+
+    text-align: center;
+
+    color: var(--error);
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+.footer {
+
+    margin-top: 25px;
+
+    text-align: center;
+
+    color: var(--text-light);
+
+    font-size: 12px;
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==========================
+   TABLET
+========================== */
+@media screen and (max-width: 768px) {
+
+    .login-container {
+
+        max-width: 450px;
+
+        padding: 35px 25px;
+    }
+
+    .logo-section h1 {
+
+        font-size: 24px;
+    }
+}
+
+/* ==========================
+   MOBILE
+========================== */
+@media screen and (max-width: 480px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .login-container {
+
+        padding: 30px 20px;
+
+        border-radius: 18px;
+    }
+
+    .logo-section img {
+
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo-section h1 {
+
+        font-size: 22px;
+    }
+
+    .logo-section p {
+
+        font-size: 13px;
+    }
+
+    .input-group input {
+
+        padding: 13px 15px 13px 42px;
+
+        font-size: 14px;
+    }
+
+    .login-btn {
+
+        font-size: 15px;
+
+        padding: 13px;
+    }
+}
+
+/* ==========================
+   SMALL MOBILE
+========================== */
+@media screen and (max-width: 320px) {
+
+    .login-container {
+        padding: 25px 15px;
+    }
+
+    .logo-section h1 {
+        font-size: 20px;
+    }
+
+    .input-group input {
+        font-size: 13px;
+    }
+}
